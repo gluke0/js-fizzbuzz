@@ -19,7 +19,7 @@ for (let i = 1; i <= 100; i++){
         box.classList.add("fizzbuzz")
         box.append(`FizzBuzz`);
     } else if (i % 5 == 0){
-        box.classList.add("Buzz")
+        box.classList.add("buzz")
         box.append("Buzz")
     } else if (i % 3 == 0){
         box.classList.add("fizz")
@@ -29,5 +29,6 @@ for (let i = 1; i <= 100; i++){
     }
     
 };
+  
 
 
