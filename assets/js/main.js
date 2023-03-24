@@ -12,13 +12,17 @@ let container = document.querySelector(`.package`);
 
 for (let i = 1; i <= 100; i++){
     let box = document.createElement(`div`);
+    box.classList.add(`box`)
     container.append(box);
 
     if (i % 3 == 0 && i % 5 == 0){
+        box.classList.add("fizzbuzz")
         box.append(`FizzBuzz`);
     } else if (i % 5 == 0){
+        box.classList.add("Buzz")
         box.append("Buzz")
     } else if (i % 3 == 0){
+        box.classList.add("fizz")
         box.append("Fizz")
     } else {
         box.append(i)
