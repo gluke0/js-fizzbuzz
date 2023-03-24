@@ -8,17 +8,22 @@ stampare in console i numeri da 1 a 100
         if (n % 3 == 0 && n % 5 == 0)
 */
 
+let container = document.querySelector(`.package`);
 
 for (let i = 1; i <= 100; i++){
+    let box = document.createElement(`div`);
+    container.append(box);
+
     if (i % 3 == 0 && i % 5 == 0){
-        console.log("FizzBuzz")
+        box.append(`FizzBuzz`);
     } else if (i % 5 == 0){
-        console.log("Buzz")
+        box.append("Buzz")
     } else if (i % 3 == 0){
-        console.log("Fizz")
+        box.append("Fizz")
     } else {
-        console.log(i)
+        box.append(i)
     }
-}
+    
+};
 
 
